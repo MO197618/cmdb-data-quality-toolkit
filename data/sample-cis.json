@@ -1,0 +1,46 @@
+{
+  "cis": [
+    {
+      "sys_id": "ci-001",
+      "name": "app-server-01",
+      "class": "cmdb_ci_server",
+      "serial_number": "SN-001",
+      "status": "Operational",
+      "environment": "Production",
+      "owner": "Platform Team",
+      "last_discovered": "2026-10-01T10:00:00Z"
+    },
+    {
+      "sys_id": "ci-002",
+      "name": "db-server-01",
+      "class": "cmdb_ci_server",
+      "serial_number": "SN-002",
+      "status": "Operational",
+      "environment": "Production",
+      "owner": "Database Team",
+      "last_discovered": "2026-06-01T10:00:00Z"
+    },
+    {
+      "sys_id": "ci-003",
+      "name": "app-server-01",
+      "class": "cmdb_ci_server",
+      "serial_number": "SN-001",
+      "status": "Unknown",
+      "environment": "",
+      "owner": "",
+      "last_discovered": ""
+    }
+  ],
+  "relationships": [
+    {
+      "parent_sys_id": "ci-001",
+      "child_sys_id": "ci-002",
+      "type": "Depends on"
+    },
+    {
+      "parent_sys_id": "ci-001",
+      "child_sys_id": "ci-999",
+      "type": "Runs on"
+    }
+  ]
+}

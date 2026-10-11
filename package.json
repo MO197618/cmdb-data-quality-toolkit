@@ -1,0 +1,14 @@
+{
+  "name": "cmdb-data-quality-toolkit",
+  "version": "1.0.0",
+  "description": "JavaScript-first CMDB data-quality checks with Python support.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "check": "node src/index.js data/sample-cis.json",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
